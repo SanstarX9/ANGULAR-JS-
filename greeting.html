@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Greeting App</title>
+
+    <!-- Step 1: Include AngularJS Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-controller="myController">
+
+    <!-- Step 3: Display Greeting Message -->
+    <h2>{{message}}</h2>
+
+    <script>
+        // Step 2: Create AngularJS Application
+        var app = angular.module("myApp", []);
+
+        // Step 3: Create Controller
+        app.controller("myController", function($scope) {
+            $scope.message = "Hello, Welcome to AngularJS!";
+        });
+    </script>
+
+</body>
+</html>
